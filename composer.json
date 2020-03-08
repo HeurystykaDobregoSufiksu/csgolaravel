@@ -16,7 +16,8 @@
         "invisnik/laravel-steam-auth": "^4.2",
         "laravel/framework": "^7.0",
         "laravel/socialite": "^4.3",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "laravelcollective/html": "^5.4.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

@@ -9,5 +9,4 @@
         {{$tradeup->skin_name}}
     @endforeach
 
-
 @endsection

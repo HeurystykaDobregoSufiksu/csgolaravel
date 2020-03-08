@@ -15,20 +15,16 @@ class usersController extends Controller
             $user = Auth::user();
             if($user!=null){
                 $itemdata=inventory::where('user_id','=',$user->id)->leftJoin('item_wears', 'item_wears.id', '=', 'inventories.item_id')->get();
-
-                if(count($itemdata)){
-                    //var_dump($itemdata);
-                }else{
+                if(!count($itemdata)){
                     $this->refreshInventory();
                     $itemdata=inventory::where('user_id','=',$user->id)->rightJoin('item_wears', 'item_wears.skin_id', '=', 'inventories.item_id')->get();
                 }
                 return view('profile',['userdata'=>$user,'items'=>$itemdata]);
-
             }else{
                 return ("zaloguj sie");
             }
-
     }
+
     public function refreshInventory(){
         $user = Auth::user();
         if($user!=null){
@@ -47,6 +43,7 @@ class usersController extends Controller
         }
         $this->show();
     }
+
     public function logged(){
         return view('index');
     }

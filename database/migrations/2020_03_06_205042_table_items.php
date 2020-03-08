@@ -15,10 +15,6 @@ class TableItems extends Migration
     {
         Schema::table('items', function (Blueprint $table) {
             $table->foreign('collection_id')->references('id')->on('itemcollections')->onDelete('cascade');
-           // $table->integer('collection_id')->unsigned()->change();
-           // $table->integer('collection_id')->change();
-           // $table->foreign('collection_id')->references('id')->on('collections')->onDelete("NO ACTION");
-            //$table->foreign('collection_id')->references('id')->on('collections');
         });
     }
 

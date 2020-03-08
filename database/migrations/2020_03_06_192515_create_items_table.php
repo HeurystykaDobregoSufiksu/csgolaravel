@@ -19,7 +19,6 @@ class CreateItemsTable extends Migration
             $table->string('skin_name');
             $table->unsignedBigInteger('collection_id')->nullable();
             $table->enum('rarity', ['Consumer Grade', 'Industrial Grade', 'Mil-Spec', 'Restricted', 'Classified', 'Covert', 'gold', 'contraband'])->nullable();
-            //$table->string('rarity')->nullable();
             $table->integer('gameID')->nullable();
             $table->float('minWear')->nullable();
             $table->float('maxWear')->nullable();
