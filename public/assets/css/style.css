@@ -1,0 +1,374 @@
+body{
+  color: white;
+}
+.container-fluid {
+  background-color: rgba(16,16,16,1);
+
+  padding:0 !important;
+  height:100vh;
+    color: white !important;
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+
+.skin p{
+  font-size:1.7vh;
+}
+#selected{
+  height: 60vh;
+  overflow: auto;
+  padding-bottom: 1vh;
+}
+#inventory {
+  height:70vh;
+  background-color:rgba(96,96,96,0.3);
+  overflow:auto;
+
+}
+#textArea span {
+  color:#006b3b;
+}
+#inventory img {
+  background-color:rgba(255,255,255,0)!important;
+  border:0!important;
+  transition: all .6s ease-in-out;
+}
+.skin{
+  padding-top:2vh;
+
+}
+.skin:hover{
+  background-color:rgb(8,8,8);
+  cursor:pointer;
+}
+
+#loginInfo .row a{
+  color:inherit;
+}
+#loginInfo .row p{
+  margin-bottom: 0;
+}
+.skin:hover .col-12 img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+filter: drop-shadow(0px 0px 5px rgba(0,107,59,1));
+
+}
+#inventory p {
+  text-align: center;
+}
+.skinS{
+  white-space: nowrap;
+  height:7vh;
+  background-color:#006b3b;
+  margin-top:1vh;
+  line-height: 7vh;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+.skinSD{
+  white-space: nowrap;
+  height:7vh;
+  background-color:rgba(0,0,0,0.3);
+  margin-top:1vh;
+  line-height: 7vh;
+  overflow: hidden;
+  border: 2px solid rgba(0,0,0,0.4);
+}
+.skinS .row .col-8{
+  overflow: hidden;
+}
+.skinS .row .col-8 p{
+    white-space: nowrap;
+    width: auto;
+    position: absolute;
+}
+
+.skinS img{
+  height:7vh;
+}
+#pan1 {
+  margin-top:10vh;
+text-shadow: 0 0 10px #000;
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+  font-size: 5vh;
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+
+#pan1 span {
+  margin-top:10vh;
+text-shadow: 0 0 10px #000;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #00ad5f;
+  text-align: center;
+}
+@-webkit-keyframes pulsate {
+0% {
+    opacity: 0.7;
+    transform: scale(0.95);
+}
+50% {
+    opacity: 1.0;
+    transform: scale(1);
+}
+100% {
+    opacity: 0.7;
+    transform: scale(0.95);
+}
+}
+
+.topBar {
+  height:8vh;
+background-color: rgb(0,0,0);
+border-bottom: 2px solid rgba(0,107,59,1);
+-webkit-box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.75);
+padding-top:0!important;
+padding-bottom:0!important;
+
+  width:100%;
+  padding:1vh;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.4);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #006b3b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00ad5f;
+}
+
+#loginInfo{
+  height:8vh!important;
+  line-height: 8vh;
+  font-family: 'Lexend Deca', sans-serif;
+}
+#loginInfo .row{
+  height:8vh!important;
+  line-height: 8vh;
+  font-family: 'Lexend Deca', sans-serif;
+}
+#loginInfo .row .col-10{
+  border-right: 2px solid rgba(0,0,0,0.1);
+}
+#loginInfo .row .col-10 p{
+  margin-bottom: 0;
+}
+#loginInfo .row .col-1:hover img{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+#loginInfo .row .col-1:hover i{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+#avTopBar img {
+  height: 5vh;
+}
+
+
+
+
+/*    */
+#loginInfo button:focus {
+   outline:none!important;
+   filter: brightness(90%);
+}
+#panbt {
+  height:40vh;
+  position:relative;
+}
+#knifeAnim {
+  height:40vh;
+  -webkit-animation: knifeAnimation 1s ease-out;
+  -webkit-animation-iteration-count:1;
+  position:relative;
+  text-align: center;
+}
+#knifeAnim img{
+  height:100%;
+  width:100%;
+  object-fit:contain;
+  display: block;
+
+}
+#cardAnim {
+  height:40vh;
+  -webkit-animation: cardAnimation 1s ease-out;
+  -webkit-animation-iteration-count:1;
+  position:relative;
+  text-align: center;
+}
+#cardAnim img{
+  height:100%;
+  width:100%;
+  object-fit:contain;
+  display: block;
+}
+#imgContainer {
+  position: relative;
+  width:100%;
+  height:40vh;
+  transform:rotate(5deg);
+}
+#imgContainer2 {
+  position: relative;
+  width:100%;
+  height:40vh;
+  transform:rotate(-5deg);
+}
+#imgContainer p{
+  font-size: 6vh;
+  color:#fefefe;
+  font-family: 'Dosis', sans-serif;
+  position:absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#Rs {
+  font-size: 13vh;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: rsAnim 1s ease-out;
+  -webkit-animation-iteration-count:1;
+}
+
+#section1 .jumbotron{
+  background-color:rgb(8,8,8)!important;
+  padding-top:32px;
+  padding-bottom:32px;
+}
+#section1 .col-3 .jumbotron{
+border-radius: 0;
+
+}
+#section1 .col-8 {
+
+}
+#section1 .col-4 h5{
+
+}
+
+#section1 .table {
+  text-align: center!important;
+  margin-bottom:0;
+}
+#section1 .table tbody{
+  color:rgb(0,0,0);
+}
+#section1 .table tbody a{
+  color:inherit;
+}
+#infoTable {
+  width: 100%;
+}
+#infoTable tr{
+  padding:2vh 0 2vh 0;
+  -webkit-box-shadow:  0px 9px 5px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow:  0px 9px 5px -8px rgba(0,0,0,0.75);
+  box-shadow:  0px 4px 5px -5px rgba(0,0,0,0.75);
+}
+#infoTable th{
+text-align: right;
+}
+#infoTable td{
+  padding:0.5vh 1vh 0.5vh 1vh;
+}
+#section2 .jumbotron {
+  padding-top:32px;
+  padding-bottom:32px;
+  border-radius: 0;
+}
+#section2 {
+  margin-bottom: 5vh;
+}
+.skinsFromCollection .skin {
+
+  border-bottom: 5px solid rgb(235, 75, 75);
+  margin-top:2vh;
+}
+.skinsFromCollection a {
+  padding:0;
+  color:inherit;
+  text-align: center;
+  text-decoration: none;
+}
+.skinsFromCollection a:hover {
+  color:inherit;
+  text-decoration: none;
+}
+@-webkit-keyframes cardAnimation {
+0% {
+    left:20%;
+    opacity:0;
+    transform: rotate(20deg);
+}
+50% {
+
+}
+75%{
+  opacity:1;
+  transform: rotate(8deg);
+}
+100% {
+    left:0;
+}
+}
+@-webkit-keyframes knifeAnimation {
+0% {
+    right:20%;
+    opacity:0;
+    transform: rotate(-20deg);
+}
+50% {
+
+}
+75%{
+  opacity:1;
+  transform: rotate(-8deg);
+}
+100% {
+    right:0;
+
+}
+}
+
+@-webkit-keyframes rsAnim {
+0% {
+
+    opacity:0;
+
+}
+50% {
+    opacity:0;
+}
+75%{
+
+
+}
+100% {
+    opacity:1;
+
+}
+}
